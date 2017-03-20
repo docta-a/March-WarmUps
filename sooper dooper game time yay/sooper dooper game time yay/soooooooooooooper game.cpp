@@ -19,10 +19,30 @@ int main() {
 		case 'EE':
 			cout << "!!!!!!!!!!!!!EAT SOHOEUENS SHORTS!!!!!!!!!!!" << endl; \
 				system("Color 4F");
+			system("pause");
+			int noise;
+			void ESS();
+
+			int main() {
+
+				ESS();
+			
+			}
+
+			void ESS() {
+
+				cout << "How many times do you want to hear it?" << endl;
+				cin >> noise;
+
+				cout << "eat sochoeun's shorts" << endl;
+				for (int i = 0; i < noise; i++)
+					PlaySound("shorts.wav", NULL, SND_FILENAME);
+
+			}
 			break;
 		case 2:
 			cout << "You are in a room full of boxes," << endl;
-			if (item[3].compare("Bacon") != 0)//if there's NO bacon in their items
+			if (item[3].compare("Bacon") != 0) //if there's NO bacon in their items
 				cout << "you see a un-cooked Bacon on the table" << endl; //say it's in the room
 				cout << "you can go North or South" << endl;
 			cin >> input;
