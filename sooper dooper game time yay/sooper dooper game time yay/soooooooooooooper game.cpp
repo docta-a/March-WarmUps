@@ -1,119 +1,125 @@
 #include <iostream>
-#include <string>
-#include <windows.h>
+#include <string>// RRRAAAAAWWWWRRRR XD
+#include <windows.h>// RRRAAAAAWWWWRRRR // RRRAAAAAWWWWRRRR XD
 #include <string>
 using namespace std;
-int main() {
+int main() {// RRRAAAAAWWWWRRRR // RRRAAAAAWWWWRRRR XD
 	int room = 1;
-	string input;
-	string item[4];////Items you pick up in the game
+	string input;// RRRAAAAAWWWWRRRR XD
+	string item[4];////Items you pick up in the // RRRAAAAAWWWWRRRR // RRRAAAAAWWWWRRRR XD
 
 	while (input != "quit") {
-		switch (room) {
-		case 1:
-			cout << "You are in a room that has dim light, you see a door with the word east" << endl;
-			cout << "you can now go East" << endl;
-			cin >> input;
-			if (input.compare("east") == 0 || input.compare("go east") == 0)////cheat for strings
+		switch (room) {// RRRAAAAAWWWWRRRR XD
+		case 1:// RRRAAAAAWWWWRRRR // RRRAAAAAWWWWRRRR // RRRAAAAAWWWWRRRR XD
+			cout << "You are in a room that has dim light, you see a door with the word east" << endl;// RRRAAAAAWWWWRRRR XD// RRRAAAAAWWWWRRRR XD// RRRAAAAAWWWWRRRR XD
+			cout << "you can now go East" << endl;// RRRAAAAAWWWWRRRR // RRRAAAAAWWWWRRRR // RRRAAAAAWWWWRRRR XD
+			cin >> input;// RRRAAAAAWWWWRRRR XD// RRRAAAAAWWWWRRRR // RRRAAAAAWWWWRRRR XD// RRRAAAAAWWWWRRRR XD
+			if (input.compare("east") == 0 || input.compare("go east") == 0)////cheat for // RRRAAAAAWWWWRRRR // RRRAAAAAWWWWRRRR // RRRAAAAAWWWWRRRR XD// RRRAAAAAWWWWRRRR XD
 				room = 2;
-			else if (input.compare("west") == 0 || input.compare("go west") == 0)
+			else if (input.compare("west") == 0 || input.compare("go west") == 0)// RRRAAAAAWWWWRRRR // RRRAAAAAWWWWRRRR XD// RRRAAAAAWWWWRRRR // RRRAAAAAWWWWRRRR XD// RRRAAAAAWWWWRRRR XD
 				room = 11;
-		case 11:
-			cout << "!!!!!!!!!!!!!EAT SOHOEUENS SHORTS!!!!!!!!!!!" << endl; 
-				system("Color 4F");
-			system("pause");
-			break;
-		case 2:
-			cout << "You are in a room full of boxes," << endl;
-			if (item[3].compare("Bacon") != 0) //if there's NO bacon in their items
+			// RRRAAAAAWWWWRRRR XD// RRRAAAAAWWWWRRRR XD// RRRAAAAAWWWWRRRR XD		case 2:// RRRAAAAAWWWWRRRR // RRRAAAAAWWWWRRRR XD// RRRAAAAAWWWWRRRR XD// RRRAAAAAWWWWRRRR XD
+			cout << "You are in a room full of boxes," << endl;// RRRAAAAAWWWWRRRR XD
+			if (item[3].compare("Bacon") != 0) //if there's NO bacon in their items// RRRAAAAAWWWWRRRR // RRRAAAAAWWWWRRRR XD// RRRAAAAAWWWWRRRR XD
 				cout << "you see a un-cooked Bacon on the table" << endl; //say it's in the room
-				cout << "you can go North or South" << endl;
+				cout << "you can go North or South" << endl;// RRRAAAAAWWWWRRRR XD// RRRAAAAAWWWWRRRR XD
 			cin >> input;
-			if (input.compare("north") == 0 || input.compare("go north") == 0)
+			if (input.compare("north") == 0 || input.compare("go north") == 0)// RRRAAAAAWWWWRRRR XD
 				room = 3;
-			else if (input.compare("south") == 0 || input.compare("go south") == 0)
+			else if (input.compare("south") == 0 || input.compare("go south") == 0)// RRRAAAAAWWWWRRRR // RRRAAAAAWWWWRRRR XD
 				room = 4;
 			if (input.compare("bacon") == 0) { //Bacon is now in the inventory
-				item[1] = "bacon"; //put in inventory
-				cout << "You grabbed the good Bacon!" << endl;	}
-			break;
+				item[1] = "bacon"; //put in // RRRAAAAAWWWWRRRR XD
+				cout << "You grabbed the good Bacon!" << endl;// RRRAAAAAWWWWRRRR XD
+				system("Color 3B");// RRRAAAAAWWWWRRRR XD
+				system("pause");// RRRAAAAAWWWWRRRR XD
+				// RRRAAAAAWWWWRRRR XD
+			break;// RRRAAAAAWWWWRRRR XD// RRRAAAAAWWWWRRRR XD
 		case 3:
-			cout << "You are in a room full of boxes," << endl;
+			cout << "You enter a room with a PC master race in it," << endl;// RRRAAAAAWWWWRRRR XD
 			if (item[2].compare("PC") != 0)
 				cout << "you see a pc master race on the table" << endl; 
-			cout << "you can go South" << endl;
+			cout << "you can go South" << endl;// RRRAAAAAWWWWRRRR XD
 			cin >> input;
-			if (input.compare("south") == 0 || input.compare("go south") == 0)
+			if (input.compare("south") == 0 || input.compare("go south") == 0)// RRRAAAAAWWWWRRRR XD
 				room = 2;
-			if (input.compare("PC") == 0) { 
-				item[2] = "PC"; 
+			if (input.compare("PC") == 0) { // RRRAAAAAWWWWRRRR XD
+				item[2] = "PC"; // RRRAAAAAWWWWRRRR XD// RRRAAAAAWWWWRRRR XD
 				cout << "You grabbed the pc master race!" << endl;
+				system("Color 3F");// RRRAAAAAWWWWRRRR XD// RRRAAAAAWWWWRRRR // RRRAAAAAWWWWRRRR XD// RRRAAAAAWWWWRRRR XD// RRRAAAAAWWWWRRRR // RRRAAAAAWWWWRRRR XD// RRRAAAAAWWWWRRRR XD
 			}
-			break;
-		case 4:
-			cout << "You enter a room with windows, you look out side and see your on the middle of no where!" << endl;
+			break;// RRRAAAAAWWWWRRRR // RRRAAAAAWWWWRRRR XD// RRRAAAAAWWWWRRRR XD
+		case 4:// RRRAAAAAWWWWRRRR XD// RRRAAAAAWWWWRRRR // RRRAAAAAWWWWRRRR XD// RRRAAAAAWWWWRRRR XD// RRRAAAAAWWWWRRRR // RRRAAAAAWWWWRRRR XD// RRRAAAAAWWWWRRRR XD
+			cout << "You enter a room with windows, you look out side and see your on the middle of no where!" << endl;// RRRAAAAAWWWWRRRR XD
 			cout << "You can go west" << endl;
-			cin >> input;
-			if (input.compare("west") == 0 || input.compare("go west") == 0)
-				room = 5;
+			cin >> input;// RRRAAAAAWWWWRRRR // RRRAAAAAWWWWRRRR XD// RRRAAAAAWWWWRRRR XD
+			if (input.compare("west") == 0 || input.compare("go west") == 0)// RRRAAAAAWWWWRRRR // RRRAAAAAWWWWRRRR XD
+				room = 5;// RRRAAAAAWWWWRRRR // RRRAAAAAWWWWRRRR XD
 				break;
-		case 5:
-			cout << "You enter the Room, Oh no theres a monster!" << endl;
+		case 5:// RRRAAAAAWWWWRRRR XD
+			cout << "You enter the Room, Oh no theres a monster!" << endl;// RRRAAAAAWWWWRRRR // RRRAAAAAWWWWRRRR XD// RRRAAAAAWWWWRRRR XD// RRRAAAAAWWWWRRRR XD
 			if (item[2].compare("book") != 0)
-				cout << "you see a book on an empty table" << endl;
-			cout << "You can go west" << endl;
+				cout << "you see a book on an empty table" << endl;// RRRAAAAAWWWWRRRR XD// RRRAAAAAWWWWRRRR XD
+			cout << "You can go west" << endl;// RRRAAAAAWWWWRRRR XD// RRRAAAAAWWWWRRRR XD
 			cin >> input;
-			if (input.compare("west") == 0 || input.compare("go west") == 0)
+			if (input.compare("west") == 0 || input.compare("go west") == 0)// RRRAAAAAWWWWRRRR // RRRAAAAAWWWWRRRR XD// RRRAAAAAWWWWRRRR XD
 				room = 6;
-			else if (input.compare("south") == 0 || input.compare("go south") == 0)
-				room = 7;
+			else if (input.compare("south") == 0 || input.compare("go south") == 0)// RRRAAAAAWWWWRRRR XD// RRRAAAAAWWWWRRRR // RRRAAAAAWWWWRRRR XD
+				room = 7;// RRRAAAAAWWWWRRRR XD
 				break;
-		case 6:
-			cout << "You have entered the gas chamber, you are dead!" << endl;
-			
-				break;
-		case 7:
-			cout << "You are in room 7!" << endl;
+		case 6:// RRRAAAAAWWWWRRRR XD// RRRAAAAAWWWWRRRR XD
+			cout << "You have entered the gas chamber, you are dead!" << endl;// RRRAAAAAWWWWRRRR // RRRAAAAAWWWWRRRR XD// RRRAAAAAWWWWRRRR XD// RRRAAAAAWWWWRRRR XD
+			input = "quit";// RRRAAAAAWWWWRRRR // RRRAAAAAWWWWRRRR XD
+			system("Color 4A");// RRRAAAAAWWWWRRRR // RRRAAAAAWWWWRRRR XD
+			system("pause");// RRRAAAAAWWWWRRRR XD
+			break;// RRRAAAAAWWWWRRRR XD
+		case 7:// RRRAAAAAWWWWRRRR XD// RRRAAAAAWWWWRRRR XD
+			cout << "You are in room 7!" << endl;// RRRAAAAAWWWWRRRR // RRRAAAAAWWWWRRRR XD// RRRAAAAAWWWWRRRR XD
+			if (item[2].compare("book") != 0)// RRRAAAAAWWWWRRRR XD// RRRAAAAAWWWWRRRR XD
+				cout << "you see a book on an empty table" << endl;// RRRAAAAAWWWWRRRR XD// RRRAAAAAWWWWRRRR XD// RRRAAAAAWWWWRRRR XD
+			cout << "You can go west" << endl;// RRRAAAAAWWWWRRRR // RRRAAAAAWWWWRRRR XD
+			cin >> input;// RRRAAAAAWWWWRRRR XD// RRRAAAAAWWWWRRRR // RRRAAAAAWWWWRRRR // RRRAAAAAWWWWRRRR XD
+			if (input.compare("west") == 0 || input.compare("go west") == 0)// RRRAAAAAWWWWRRRR XD
+				room = 1;// RRRAAAAAWWWWRRRR // RRRAAAAAWWWWRRRR XD
+				break;// RRRAAAAAWWWWRRRR XD
+		case 8:// RRRAAAAAWWWWRRRR XD
+			cout << "You are in room 8!" << endl;// RRRAAAAAWWWWRRRR XD
 			if (item[2].compare("book") != 0)
-				cout << "you see a book on an empty table" << endl;
-			cout << "You can go west" << endl;
-			cin >> input;
-			if (input.compare("west") == 0 || input.compare("go west") == 0)
+				cout << "you see a book on an empty table" << endl;// RRRAAAAAWWWWRRRR // RRRAAAAAWWWWRRRR XD
+			cout << "You can go west" << endl;// RRRAAAAAWWWWRRRR XD
+			cin >> input;// RRRAAAAAWWWWRRRR XD// RRRAAAAAWWWWRRRR XD
+			if (input.compare("west") == 0 || input.compare("go west") == 0)// RRRAAAAAWWWWRRRR XD
 				room = 1;
+			break;// RRRAAAAAWWWWRRRR XD// RRRAAAAAWWWWRRRR XD// RRRAAAAAWWWWRRRR XD
+		case 9:// RRRAAAAAWWWWRRRR // RRRAAAAAWWWWRRRR XD// RRRAAAAAWWWWRRRR // RRRAAAAAWWWWRRRR XD
+			cout << "You are in room 9!" << endl;// RRRAAAAAWWWWRRRR XD
+			if (item[2].compare("book") != 0)// RRRAAAAAWWWWRRRR XD
+				cout << "you see a book on an empty table" << endl;// RRRAAAAAWWWWRRRR XD
+			cout << "You can go west" << endl;// RRRAAAAAWWWWRRRR XD// RRRAAAAAWWWWRRRR XD
+			cin >> input;// RRRAAAAAWWWWRRRR XD// RRRAAAAAWWWWRRRR XD
+			if (input.compare("west") == 0 || input.compare("go west") == 0)// RRRAAAAAWWWWRRRR XD
+				room = 1;// RRRAAAAAWWWWRRRR XD// RRRAAAAAWWWWRRRR XD
 				break;
-		case 8:
-			cout << "You are in room 8!" << endl;
-			if (item[2].compare("book") != 0)
-				cout << "you see a book on an empty table" << endl;
-			cout << "You can go west" << endl;
-			cin >> input;
-			if (input.compare("west") == 0 || input.compare("go west") == 0)
-				room = 1;
+		case 10:// RRRAAAAAWWWWRRRR XD
+			cout << "You are in room 10!" << endl;// RRRAAAAAWWWWRRRR XD// RRRAAAAAWWWWRRRR XD
+			if (item[2].compare("book") != 0)// RRRAAAAAWWWWRRRR XD
+				cout << "you see a book on an empty table" << endl;// RRRAAAAAWWWWRRRR XD// RRRAAAAAWWWWRRRR XD
+				cout << "You can go west" << endl;// RRRAAAAAWWWWRRRR // RRRAAAAAWWWWRRRR XD
+			cin >> input;// RRRAAAAAWWWWRRRR XD// RRRAAAAAWWWWRRRR XD
+			if (input.compare("west") == 0 || input.compare("go west") == 0)// RRRAAAAAWWWWRRRR XD
+				room = 1;// RRRAAAAAWWWWRRRR XD
+			if (input.compare("book") == 0) {// RRRAAAAAWWWWRRRR XD
+				item[2] = "book";// RRRAAAAAWWWWRRRR // RRRAAAAAWWWWRRRR XD
+				cout << "You grabbed the book!" << endl;// RRRAAAAAWWWWRRRR XD
+				break;
+		case 11:// RRRAAAAAWWWWRRRR XD// RRRAAAAAWWWWRRRR XD// RRRAAAAAWWWWRRRR XD// RRRAAAAAWWWWRRRR // RRRAAAAAWWWWRRRR XD
+			cout << "!!!!!!!!!!!!!EAT SOHOEUENS SHORTS!!!!!!!!!!!" << endl; 
+				system("Color 4F");// RRRAAAAAWWWWRRRR XD
+			system("pause");// RRRAAAAAWWWWRRRR XD// RRRAAAAAWWWWRRRR XD// RRRAAAAAWWWWRRRR XD
 			break;
-		case 9:
-			cout << "You are in room 9!" << endl;
-			if (item[2].compare("book") != 0)
-				cout << "you see a book on an empty table" << endl;
-			cout << "You can go west" << endl;
-			cin >> input;
-			if (input.compare("west") == 0 || input.compare("go west") == 0)
-				room = 1;
-				break;
-		case 10:
-			cout << "You are in room 10!" << endl;
-			if (item[2].compare("book") != 0)
-				cout << "you see a book on an empty table" << endl;
-			cout << "You can go west" << endl;
-			cin >> input;
-			if (input.compare("west") == 0 || input.compare("go west") == 0)
-				room = 1;
-			if (input.compare("book") == 0) {
-				item[2] = "book";
-				cout << "You grabbed the book!" << endl;
-				break;
-			}
-		}//end switch
+			}// RRRAAAAAWWWWRRRR XD
+		}//end switch// RRRAAAAAWWWWRRRR XD// RRRAAAAAWWWWRRRR XD
 	}//end while
-	cout << "Game over" << endl;
+	cout << "Game over" << endl;// RRRAAAAAWWWWRRRR XD// RRRAAAAAWWWWRRRR XD
 	exit(0);
-}//end main
+}//end main// RRRAAAAAWWWWRRRR XD// RRRAAAAAWWWWRRRR XD// RRRAAAAAWWWWRRRR XD
