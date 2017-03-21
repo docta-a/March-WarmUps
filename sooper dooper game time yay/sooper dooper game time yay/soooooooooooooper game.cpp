@@ -14,31 +14,14 @@ int main() {
 			cout << "You are in a room that has dim light, you see a door with the word east" << endl;
 			cout << "you can now go East" << endl;
 			cin >> input;
-			if (input.compare("e") == 0 || input.compare("east") == 0)////cheat for strings
+			if (input.compare("east") == 0 || input.compare("go east") == 0)////cheat for strings
 				room = 2;
-		case 'EE':
-			cout << "!!!!!!!!!!!!!EAT SOHOEUENS SHORTS!!!!!!!!!!!" << endl; \
+			else if (input.compare("west") == 0 || input.compare("go west") == 0)
+				room = 11;
+		case 11:
+			cout << "!!!!!!!!!!!!!EAT SOHOEUENS SHORTS!!!!!!!!!!!" << endl; 
 				system("Color 4F");
 			system("pause");
-			int noise;
-			void ESS();
-
-			int main() {
-
-				ESS();
-			
-			}
-
-			void ESS() {
-
-				cout << "How many times do you want to hear it?" << endl;
-				cin >> noise;
-
-				cout << "eat sochoeun's shorts" << endl;
-				for (int i = 0; i < noise; i++)
-					PlaySound("shorts.wav", NULL, SND_FILENAME);
-
-			}
 			break;
 		case 2:
 			cout << "You are in a room full of boxes," << endl;
