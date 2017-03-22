@@ -1,6 +1,6 @@
 #include <iostream>
 #include <string>
-#include <windows.h>
+#include <Windows.h>
 #include <string>
 using namespace std;
 int main() {
@@ -14,15 +14,16 @@ int main() {
 			cout << "You are in a room that has dim light, you see a door with the word east" << endl;// // // 
 			cout << "you can now go East" << endl;//  //  // 
 			cin >> input;// //  // // 
-			if (input.compare("east") == 0 || input.compare("go east") == 0)////cheat for //  //  // // 
+			if (input.compare("east") == 0 || input.compare("go east") == 0)////cheat for 
 				room = 2;
 			else if (input.compare("west") == 0 || input.compare("go west") == 0)
 				room = 11;
-			// // // 		case 2://  // // // 
+
+		case 2:
 			cout << "You are in a room full of boxes," << endl;// 
 			if (item[3].compare("Bacon") != 0) //if there's NO bacon in their items//  // // 
 				cout << "you see a un-cooked Bacon on the table" << endl; //say it's in the room
-				cout << "you can go North or South" << endl;// // 
+			cout << "you can go North or South" << endl;// // 
 			cin >> input;
 			if (input.compare("north") == 0 || input.compare("go north") == 0)// 
 				room = 3;
@@ -31,14 +32,13 @@ int main() {
 			if (input.compare("bacon") == 0) { //Bacon is now in the inventory
 				item[1] = "bacon"; //put in // 
 				cout << "You grabbed the good Bacon!" << endl;// 
-				system("Color 3B");// 
-				system("pause");// 
+				system("Color 4B");// 
 				// 
-			break;// // 
+				break;// // 
 		case 3:
 			cout << "You enter a room with a PC master race in it," << endl;// 
 			if (item[2].compare("PC") != 0)
-				cout << "you see a pc master race on the table" << endl; 
+				cout << "you see a pc master race on the table" << endl;
 			cout << "you can go South" << endl;// 
 			cin >> input;
 			if (input.compare("south") == 0 || input.compare("go south") == 0)// 
@@ -55,23 +55,24 @@ int main() {
 			cin >> input;//  // // 
 			if (input.compare("west") == 0 || input.compare("go west") == 0)//  // 
 				room = 5;//  // 
-				break;
+			break;
 		case 5:// 
-			cout << "You enter the Room, Oh no theres a monster!" << endl;//  // // // 
-			if (item[2].compare("book") != 0)
-				cout << "you see a book on an empty table" << endl;// // 
-			cout << "You can go west" << endl;// // 
+			cout << "You enter the Room, Oh no you look in the mirror" << endl;//  // // // 
+			if (item[2].compare("me") != 0)
+				cout << "" << endl;// // 
+			cout << "You can go west or south" << endl;// // 
 			cin >> input;
 			if (input.compare("west") == 0 || input.compare("go west") == 0)//  // // 
 				room = 6;
 			else if (input.compare("south") == 0 || input.compare("go south") == 0)// //  // 
 				room = 7;// 
-				break;
+			break;
 		case 6:// // 
 			cout << "You have entered the gas chamber, you are dead!" << endl;//  // // // 
-			input = "quit";//  // 
-			system("Color 4A");//  // 
-			system("pause");// 
+			input = "quit"; 
+			system("Color 4A");
+			system("pause");
+			PlaySound(("dead.wav"), NULL, SND_FILENAME);
 			break;// 
 		case 7:// // 
 			cout << "You are in room 7!" << endl;//  // // 
@@ -80,8 +81,8 @@ int main() {
 			cout << "You can go west" << endl;//  // 
 			cin >> input;// //  //  // 
 			if (input.compare("west") == 0 || input.compare("go west") == 0)// 
-				room = 1;//  // 
-				break;// 
+				room = 8;//  // 
+			break;// 
 		case 8:// 
 			cout << "You are in room 8!" << endl;// 
 			if (item[2].compare("book") != 0)
@@ -89,7 +90,7 @@ int main() {
 			cout << "You can go west" << endl;// 
 			cin >> input;// // 
 			if (input.compare("west") == 0 || input.compare("go west") == 0)// 
-				room = 1;
+				room = 9;
 			break;// // // 
 		case 9://  // //  // 
 			cout << "You are in room 9!" << endl;// 
@@ -98,28 +99,32 @@ int main() {
 			cout << "You can go west" << endl;// // 
 			cin >> input;// // 
 			if (input.compare("west") == 0 || input.compare("go west") == 0)// 
-				room = 1;// // 
-				break;
+				room = 10;// // 
+			break;
 		case 10:// 
 			cout << "You are in room 10!" << endl;// // 
 			if (item[2].compare("book") != 0)// 
 				cout << "you see a book on an empty table" << endl;// // 
-				cout << "You can go west" << endl;//  // 
+			cout << "You can go west" << endl;//  // 
 			cin >> input;// // 
 			if (input.compare("west") == 0 || input.compare("go west") == 0)// 
-				room = 1;// 
+				room = 11;// 
 			if (input.compare("book") == 0) {// 
 				item[2] = "book";
 				cout << "You grabbed the book!" << endl;
+			}
 				break;
 		case 11:
-			cout << "!!!!!!!!!!!!!EAT SOHOEUENS SHORTS!!!!!!!!!!!" << endl; 
-				system("Color 4F");
-			system("pause");
+			cout << "!!!!!!!!!!!!!EAT SOHOEUENS SHORTS!!!!!!!!!!!" << endl;
+			PlaySound(("booty.wav"), NULL, SND_FILENAME);
+			input = "quit";//  // 
+			system("Color 4A");//  // 
+			system("pause");// 
 			break;
-			}
-		}//end switch
-	}//end while
-	cout << "Game over" << endl;
-	exit(0);
+			
+			}//end switch
+		}//end while
+		
+	}cout << "Game over" << endl;
+		exit(0);
 }//end main// 
